@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>MY PORTFOLIO</title>
-	<link rel="stylesheet" type="text/css" href="PORT.css">
+    <title>BULB</title>
+    <link rel="stylesheet" href="bulb.css">
 </head>
-<body>
-	<header>
-		<h1>GANESH T</h1>
-		<h3>CAREER OBJECTIVE</h3>
-		<P></P>
-		<ul>
-			<p><a href="#Home">Home</a></p>
-			<p><a href="#Bio">Bio</a></p>
-		</ul>
-	</header>
+<body><center>
+    <h1>CLICK THE BUTTON TO ON AND OFF THE BULB..!</h1>
+    <div>
+        <img id="image" src="bulb.jpg" alt="off">
+    </div>
+    <div>
+        <button id="on" onclick="bulb_on()">ON</button>
+        <button id="off" onclick="bulb_off()">OFF</button>
+    </div>
+    <script>
+        function bulb_on(){
+    document.getElementById('image').src="bulb1.jpg";
+}
+       function bulb_off(){
+    document.getElementById('image').src ="bulb.jpg";
+}
+    </script>
+</center>
 </body>
 </html>
